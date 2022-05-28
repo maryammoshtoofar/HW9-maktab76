@@ -1,24 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MailMaker</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- CSS only -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg fw-bold grey-ex-light-bg">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand cursor-pointer ms-5 " style="color:black" href="#">MailMaker</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 col-10 d-flex justify-content-end w-50 m-auto" style="color:black">
+                    <li class="nav-item pe-5">
+                        <a class="nav-link active cursor-pointer" aria-current="page" href="#">Solution</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link active cursor-pointer" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link active cursor-pointer" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active cursor-pointer" aria-current="page" href="#">Support</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <a class="nav-link pt-2 cursor-pointer" href="#" style="color:black">Log In</a>
+                    <button type="button" class="btn grey-dark grey-ex-light-bg px-3 fw-bold cursor-pointer mx-5 rounded-0 btn-border">Sign Up</button>
+                    
+                </form>
+            </div>       
+        </nav>
+        <!-- Heading and Enter Email -->
+        <div class="d-flex flex-column align-items-center grey-ex-light-bg pt-5">
+            <h1 class="fw-bold text-center px-5 grey-dark heading-1">
+                SMS Marketing and <span class="purple-color">Email</span>
+            </h1>
+            <h1 class="fw-bold text-center px-5 grey-dark heading-1">
+                <span class="purple-color"> Marketing</span> Made
+                Easy.
+            </h1> 
+            <p class="grey-light p-2 text-center body-text-1">
+                You can get started with your marketing automation in a few minutes
+            </p>
+            <form class="col-4 d-md-flex mb-5 pb-5" role="search">
+                <input
+                    class="form-control border-0 shadow-sm me-3 mb-3 rounded-0 mb-md-0"
+                    type="search"
+                    id="email"
+                    placeholder="Enter email"
+                    aria-label="Search"
+                />
+                <button class="col-12 col-md-4  btn grey-ex-dark-bg grey-ex-light rounded-0" type="submit">
+                    Let's Talk
+                </button>
+            </form>
+        </div>
+        <!-- Icons -->
+        <div class="row m-0 py-5">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col d-flex justify-content-end">
+                <a href="#" class="lock">
+                    <i class="icon-unlock bi bi-bag-check-fill h3 purple-color"></i>
+                    <i class="icon-lock bi bi-bag-check h3 purple-color"></i>
+                </a>
+                <span class="mt-2 d-none d-md-block ms-2">Upwork</span>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="#" class="lock">
+                    <i class="icon-unlock bi bi-boombox-fill h3 purple-color"></i>
+                    <i class="icon-lock bi bi-boombox h3 purple-color"></i>
+                </a>
+                <span class="mt-2 d-none d-md-block ms-2">Warner</span>
+            </div>
+            <div class="col d-flex">
+                <a href="#" class="lock">
+                    <i class="icon-unlock bi bi-cloud-moon-fill h3 purple-color"></i>
+                    <i class="icon-lock bi bi-cloud-moon h3 purple-color"></i>
+                </a>
+                <span class="mt-2 d-none d-md-block ms-2">Woocommerce</span>             
+            </div>
+            <div class="col d-flex justify-content-center">
+                <a href="#" class="lock">
+                    <i class="icon-unlock bi bi-box2-heart-fill h3 purple-color"></i>
+                    <i class="icon-lock bi bi-box2-heart h3 purple-color"></i>
+                </a>
+                <span class="mt-2 d-none d-md-block ms-2">Canva</span>
+                </div>
+            <div class="col d-flex">
+                <a href="#" class="lock">
+                    <i class="icon-unlock bi bi-camera-reels-fill h3 purple-color"></i>
+                    <i class="icon-lock bi bi-camera-reels h3 purple-color"></i>
+                </a>
+                <span class="mt-2 d-none d-md-block ms-2">RBS</span>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <!-- More Heading -->
+        <div class="d-flex flex-column align-items-center py-5 border border-bottom-0 border-start-0 border-end-0">
+            <h2 class="fw-bold text-center px-5 heading-3 grey-dark">Email Marketing</h2>
+            <h2 class="fw-bold text-center px-5 heading-3 grey-dark"> Automation Made Simple</h2>
+            <p class="grey-light py-2 px-5 text-center body-text-2">
+                Email marketers find success by ignoring best practices and focusing
+                on their
+            </p>
+        </div>
+        <!-- Cards -->
+        <div class="row d-flex justify-content-center m-0 mb-5 ">
+            <div class="col-sm-4 card mt-3 text-center grey-ex-light-bg mx-3 btn-border border-0 shadow-sm py-5 " style="width: 18rem;" >
+                <div class="purple-color-bg rounded-circle m-auto grey-ex-light p-3 fw-bold my-3 body-text-2" >01</div>
+                <div class="card-body ">
+                    <h6 class="card-title fw-bold body-text-1">Expanding</h6>
+                    <p class="card-text pt-1 fw-light">Try out Benchmark for free to discover how simple effective email marketing can be.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 card mt-3 text-center grey-ex-light-bg mx-3 btn-border border-0 shadow-sm py-5 " style="width: 18rem;">
+                <div class="purple-color-bg rounded-circle  m-auto grey-ex-light p-3 fw-bold my-3 body-text-2">02</div>
+                <div class="card-body">
+                    <h6 class="card-title fw-bold body-text-1">Sign up for free</h6>
+                    <p class="card-text pt-1 fw-light">Try out Benchmark for free to discover how simple effective email marketing can be.</p>
+                </div>
+            </div>
+                <div class="col-sm-4 card mt-3 text-center grey-ex-light-bg mx-3 btn-border border-0 shadow-sm py-5" style="width: 18rem;">
+                    <div class="purple-color-bg rounded-circle  m-auto grey-ex-light p-3 fw-bold my-3 body-text-2">03</div>
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold body-text-1">Explore your options</h6>
+                        <p class="card-text pt-1 fw-light">Try out Benchmark for free to discover how simple effective email marketing can be.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+          <!--Start Now Button  -->
+          <div class="row m-auto d-flex justify-content-center py-5">
+              <div class="col-4 d-flex justify-content-center">
+                <button type="button" class="btn outline-btn px-4 main-color fw-bold rounded-0 purple-color">Start Now</button>
+              </div>
+          </div>
+        <!-- Shapes and Learn More -->
+        <div class="row m-0">
+            <!-- Shapes -->
+            <div class=" shapes col m-0 position-relative w-100 d-none d-md-block ">
+                <div class="circle rounded-circle purple-light-bg position-absolute shadow"></div>
+                <div class="fbox shadow px-3 py-2 bg-white position-absolute">
+                    <p class="m-0">FACEBOOK ENGAGEMENT</p>
+                    <p class="m-0">1230 <span class="body-text-2 grey-light">INTERACTIONS</span></p>
+                </div>
+                <div class="drag d-flex px-4 py-3 position-absolute bg-white shadow">
+                    <h1><i class="bi bi-image h2 me-3"></i></h1>
+                    <div>
+                        <h4 class="m-0">Drag & Drop</h4>
+                        <p class="body-text-3">or<span class="green-color"> browse for a file</span></p>
+                    </div>
+                </div>
+                    <div class="task d-flex justify-content-end shadow bg-body position-absolute pe-5 ps-2 py-2">
+                        <div class="d-flex">
+                            <i class="bi bi-plus-circle-fill h4 green-color me-2"></i>
+                            <p class="m-0">Add more tasks</p>
+                        </div> 
+                    </div>
+                    <div class="square grey-ex-light-bg position-absolute w-75 h-75"></div>        
+            </div> 
+            <!-- Learn More -->           
+            <div class="col m-0">
+                <h2 class="fw-bold px-5 heading-2 grey-dark">Have access to a robust</h2>
+                <h2 class="fw-bold px-5 heading-2 grey-dark"> email marketing tool</h2>
+                <p class="grey-light py-2 px-5 body-text-2">
+                    If you're reading this, you already have access to a robust email marketing tool
+                </p>
+                <div class="col-4 m-auto ms-md-5">
+                    <button type="button" class="btn outline-btn px-4 main-color fw-bold rounded-0 purple-color ">Learn More</button>
+                </div>
+            </div>
+            <!-- Section with Image -->
+            <h2 class="fw-bold heading-2 grey-dark text-center mt-5">All you need to A</h2>
+            <h2 class="fw-bold heading-2 grey-dark text-center mb-5">single Platform</h2>
+            <div class="row pb-5">
+                <div class="col-1 d-none d-md-block"></div>
+                <div class="col px-5">
+                    <h5 class="fw-bold heading-3 grey-dark mt-5 mb-0">Homework to help </h5>
+                    <h5 class="fw-bold heading-3 grey-dark mt-0 mb-4">you take action</h5>
+                    <p class="px-2 mb-5 grey-light d-none d-md-block">To prevent Procrastination and help you apply what you learn, you'll get manageable homework broken out</p>
+                    <div class="col">
+                        <button type="button" class="btn outline-btn main-color fw-bold rounded-0 purple-color ">Find Out More</button>
+                    </div>
+                </div>
+                <div class="col px-5">
+                    <h5 class="fw-bold heading-3 grey-dark mt-5 mb-0">How to write every email</h5>
+                    <h5 class="fw-bold heading-3 grey-dark mt-0 mb-4">you should be sending</h5>
+                    <p class="px-2  mb-5 grey-light d-none d-md-block">Unsure what emails you should send and what to write in them?Learn about the most important</p>
+                    <div class="col">
+                        <button type="button" class="btn outline-btn main-color fw-bold rounded-0 purple-color ">Find Out More</button>
+                    </div>
+                </div>
+                <div class="col w-100 d-none d-lg-block">
+                    <img src="img/pic.JPG" alt="man">
+                </div>
+                <div class="col-1 d-none d-md-block"></div>
+            </div>
+            <!-- Purple Row -->
+            <div class="row purple-color-bg grey-ex-light mx-0">
+                <div class="col-1 d-none d-md-block"></div>
+                <div class="col-6 p-5 d-none d-md-block">
+                    <p class="body-text-1 pt-5 px-5 fw-light mx-5">
+                        With our free resources you will become and expert in direct marketing.
+                        Learn how to get most out of the tool with our support articles or contact
+                        us to solve any questions in no time
+                    </p>
+                </div>
+                <div class="col-3 m-auto">
+                    <div class="bg-white mt-5 mb-0"><hr></div>
+                    <div class="d-flex justify-content-around m-0 p-0">
+                        <div class="me-5">
+                            <p class="fs-1 mb-0 pb-0">120%</p>
+                            <p class="body-text-3 mt-0 pt-0 purple-ex-light ps-1">Lorem ipsum dolor</p>
+                        </div>
+                        <div>
+                            <p class="fs-1 mb-0 pb-0">250%</p>
+                            <p class="body-text-3 mt-0 pt-0 purple-ex-light ps-1">Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+                        <button type="button" class="btn grey-ex-light-bg purple-color rounded-0 w-100 my-4">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="row my-0 py-0 mt-5 "></div>
+        <div class="row m-0 mb-5 p-0 d-flex justify-content-around w-100">
+            <div class="col-1 d-none d-lg-block"></div>
+            <div class="col-12 col-md-2 d-flex d-md-block justify-content-between">
+                <i class="bi bi-envelope-plus h1 green-color ps-2 px-3"></i>
+                <span class="heading-3">MailMaker</span>
+                <p class="px-2 grey-light d-none d-md-block">Subscribe to keep up with the latest news</p>
+                <p class="mt-5 fw-bold body-text-3 d-none d-md-block">GET IN TOUCH</p>
+                <i class="bi bi-facebook green-color mx-3 h4"></i>
+                <i class="bi bi-twitter green-color mx-3 h4"></i>
+                <i class="bi bi-linkedin green-color mx-3 h4"></i>
+            </div>
+            <div class="col-2 ps-5 d-none d-md-block ">
+                <h5 class="">Learn</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item grey-light p-0 ">Our Product</li>
+                    <li class="list-group-item grey-light p-0">Tutorials</li>
+                    <li class="list-group-item grey-light p-0">Our Service</li>
+                    <li class="list-group-item grey-light p-0">Best Features</li>
+                  </ul>
+            </div>
+            <div class="col-2 pe-5 d-none d-md-block">
+                <h5 class="">Company</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item grey-light p-0 ">About Us</li>
+                    <li class="list-group-item grey-light p-0">Careers</li>
+                    <li class="list-group-item grey-light p-0">Contact Us</li>
+                    <li class="list-group-item grey-light p-0">News & Blog</li>
+                  </ul>
+            </div>
+            <div class="col-4 d-none d-lg-block">
+                <p class="grey-light">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
+                <form class="d-md-flex mb-5 py-5" role="search">
+                    <input
+                        class=" form-control border-0 shadow-sm me-3 mb-3 rounded-0 mb-md-0 w-75"
+                        type="search"
+                        placeholder="Email address"
+                        aria-label="Search"
+                    />
+                    <button class=" btn purple-color-bg grey-ex-light rounded p-2 fw-bold" type="submit">
+                        <i class="bi bi-arrow-right h5"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-1 d-none d-lg-block"></div>
+        </div>
+        <!-- Copyright -->
+        <div class="row m-0 p-0 ">
+            <div class="col ps-5 ms-5 grey-light fw-light">@2022 UIHUT.All rights reserved</div>
+            <div class="col text-end pe-5 mb-3 me-5 grey-light fw-light">Partner & Contribute</div>
+
+        </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
